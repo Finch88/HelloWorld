@@ -196,6 +196,18 @@ class Execute
         }
         Console.WriteLine();
 
+        //List is c# equivalent of vector
+        List<int> integers=new List<int>();
+        integers.Add(2);
+        integers.Add(6);
+        integers.Add(8);
+
+        Console.WriteLine("Lists: Number of elements= {0}",integers.Count);
+        foreach (int i in integers){
+            Console.Write("{0}\t",i);
+        }
+        Console.WriteLine("Average: {0}",integers.Average());
+
         //you can do other stuff with strings in c#
         string fname, sname;
         fname = "Jimmy";
